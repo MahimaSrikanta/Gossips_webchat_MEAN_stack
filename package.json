@@ -1,0 +1,16 @@
+{
+  "name": "gossipings_mahima",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+   "start": "node server.js"
+  },
+  "dependencies": {
+    
+  },
+  "description": " Video uploader",
+  "main": "server.js",
+  "devDependencies": {},
+  "author": "mahima",
+  "license": "ISC"
+}
