@@ -8,7 +8,7 @@ var jwt = require('jwt-simple');
 var secret = 'Mahima';
 var db = null;
 
-MongoClient.connect("mongodb://localhost:27017/mittens", function(err,dbconn){
+MongoClient.connect(process.env.MONGODB_URI, function(err,dbconn){
     if(!err){
         console.log("we are connected");
         db = dbconn;

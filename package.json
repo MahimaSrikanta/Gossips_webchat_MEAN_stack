@@ -3,10 +3,14 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-   "start": "node server.js"
+    "start": "node server.js"
   },
   "dependencies": {
-    
+    "bcryptjs": "^2.3.0",
+    "body-parser": "^1.15.0",
+    "express": "^4.13.4",
+    "jwt-simple": "^0.5.0",
+    "mongodb": "^2.1.16"
   },
   "description": " Video uploader",
   "main": "server.js",
