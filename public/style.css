@@ -1,0 +1,17 @@
+.feed {
+                    margin-left: 20px;
+                    margin-right: 20px;
+                    margin-top: 50px;
+                             
+                }
+                .jumbotron{
+                    text-align: center;
+                    background-color: yellowgreen  ;
+                    color: beige;
+                    font-family: Verdana, Geneva, Tahoma, sans-serif;
+                }
+                .mewo{
+                    border : 1px solid darkgray;
+                    padding: 8px;
+                    margin : 10Px;
+                }

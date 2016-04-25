@@ -1,0 +1,38 @@
+            <div class = "container" >
+                <div class = "row feed">
+                    
+                        <div class = "col-md-4 col-sm-12">
+                            <div ng-hide = "currentUser">
+                            Login: <br> <br>
+                            <input type= "text"  placeholder="Username" ng-model= "username">
+                            <br> <br>
+                            <input type="Password"  placeholder="Password" ng-model="password">
+                            <br> <br>
+                            <button type="button" class = "btn btn-primary btn-small" ng-click="login()"> Login </button> 
+                        
+                            <a href ='#/signup'>Not a Member? Sign-up </a>
+                          </div>
+                          <div ng-show = "currentUser">
+                                 Hello, {{currentUser}}<br><br>
+                                 <a href ng-click="logout()">Logout</a> <br>
+                            </div>
+                      </div>
+                            
+                      
+                   
+                        <div class = "col-md-8 col-sm-12" ng-show = "currentUser">
+                            <input type ="text" class = "form-control " placeholder=" Wats on your mind ?" ng-model="newMewo"> <br> 
+                            <button type = "button" class = "btn btn-primary " ng-click="addNew()"> Post </button> <br> <br>
+                            <blockquote class = "mewo" ng-repeat="mewo in mewos">
+                            <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+                            <a href>  <span class="glyphicon glyphicon-remove pull-right" aria-hidden="true" ng-click="removeMewo(mewo)"></span></a>
+                            {{mewo.text}}
+                            <span class="label label-info pull-right"> {{mewo.username}} </span><br>
+                            <footer class ="pull-right"> {{mewo.date | date:'medium'}} </footer><br>
+                            
+                           
+                      </blockquote>
+                    </div>
+                
+               </div> 
+               </div>
