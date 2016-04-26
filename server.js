@@ -8,7 +8,7 @@ var jwt = require('jwt-simple');
 var secret = 'Mahima';
 var db = null;
 
-MongoClient.connect(process.env.MONGODB_URI, function(err,dbconn){
+MongoClient.connect("mongodb://localhost:27017/mittens", function(err,dbconn){
     if(!err){
         console.log("we are connected");
         db = dbconn;
@@ -129,6 +129,6 @@ app.put("/user/login", function (req, res, next){
 
 
 
-app.listen(process.env.PORT || 3000, function(){
+app.listen(3000, function(){
     console.log ("Listening on port 3000");
 });
